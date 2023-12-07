@@ -1,3 +1,4 @@
+
 public class Product {
 
     String name;
@@ -9,6 +10,24 @@ public class Product {
     Product(String name, double price, int inventory) {
         this.name = name;
         this.price = price;
+        this.inventory = inventory;
+    }
+
+    // Getter-metoder för att hämta värdena
+    public  String getName() {
+        return name;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public int getInventory() {
+        return inventory;
+    }
+
+
+    public void setInventory(int inventory) {
         this.inventory = inventory;
     }
 }
